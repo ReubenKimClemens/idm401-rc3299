@@ -1,0 +1,41 @@
+:root {
+	color-scheme: light dark;
+
+	--color-bg: #fbfbfa;
+	--color-text: #1c1c1e;
+	--color-muted: #5c5c63;
+	--color-border: #e2e2dd;
+	--color-accent: #0b5cad;
+
+	--space-sm: 0.5rem;
+	--space-md: 1rem;
+	--space-lg: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-bg: #121214;
+		--color-text: #ececee;
+		--color-muted: #a3a3ab;
+		--color-border: #2e2e34;
+		--color-accent: #7cb7ff;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	line-height: 1.6;
+	color: var(--color-text);
+	background: var(--color-bg);
+}
+
+a {
+	color: var(--color-accent);
+}
